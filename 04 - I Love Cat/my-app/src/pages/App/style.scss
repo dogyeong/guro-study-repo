@@ -83,6 +83,13 @@
         transition: all 0.2s ease-in-out;
         color: var(--text-color);
         height: 54px;
+
+        @include mobile {
+          & {
+            width: 10rem;
+            padding: 0.5rem 1rem;
+          }
+        }
       }
 
       input[type='text']:focus {
@@ -101,6 +108,13 @@
         transition: all 0.2s ease-in-out;
         height: 54px;
         margin-right: 2rem;
+
+        @include mobile {
+          & {
+            padding: 0.5rem 1rem;
+            margin-right: 1rem;
+          }
+        }
 
         &:hover {
           background-color: var(--shade-5);
