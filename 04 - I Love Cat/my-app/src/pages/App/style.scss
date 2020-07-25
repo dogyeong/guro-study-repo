@@ -45,6 +45,23 @@
   --primary-darker: #{darken($primary, 20%)};
 }
 
+html,
+body {
+  font-size: 16px;
+
+  @include tablet {
+    & {
+      font-size: 15px;
+    }
+  }
+
+  @include mobile {
+    & {
+      font-size: 14px;
+    }
+  }
+}
+
 .App {
   display: flex;
   flex-direction: column;
@@ -52,6 +69,7 @@
   width: 100%;
   background-color: var(--bg-color);
   color: var(--text-color);
+  font-size: 16px;
 
   header {
     margin-bottom: 3rem;
